@@ -19,3 +19,4 @@
 
 - https://xeiaso.net/blog/nix-flakes-1-2022-02-21/
 - https://github.com/replit/nixmodules/tree/main/pkgs
+- https://nix-tutorial.gitlabpages.inria.fr/nix-tutorial/first-package.html
