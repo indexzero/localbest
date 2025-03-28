@@ -92,6 +92,8 @@ Additionally, if we're going to build a proper layercake here devenv.sh tries to
   - Yes! Definitely for the world of Prompt Engineering
 - Config language?
   - KDL 2.0, maybe? https://kdl.dev/
+- Writing custom expansions?
+  - Probably [omelette](https://github.com/f/omelette) because JIFASNIF
 
 ## "Let's build a road up to the moon"
 
