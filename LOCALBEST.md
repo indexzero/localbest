@@ -40,6 +40,7 @@ Additionally, if we're going to build a proper layercake here devenv.sh tries to
 - Further reading
   - https://blog.6nok.org/how-i-use-nix-on-macos/
   - [`nix-darwin` features to find for `home-manager`][nix-darwin-goodies]
+  - https://github.com/danielcorin/nix-config?tab=readme-ov-file
 
 ### "Packages" that need to be atomic
 
