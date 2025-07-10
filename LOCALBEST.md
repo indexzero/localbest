@@ -51,6 +51,7 @@ Additionally, if we're going to build a proper layercake here devenv.sh tries to
   - macOS system modifications (e.g. `defaults write com.apple.screencapture location "$HOME/Screenshots"`)
 - Core git requirements
   - Multiple git configs (e.g. [includeIf "gitdir:~/git/{work,github,orgs}"])
+  - Perhaps using something like this? https://github.com/LucasPickering/env-select
 - `ghcd` compatible file system
   - `ghcd` as a `nix` package?
   - global `.gitconfig`
@@ -64,6 +65,10 @@ Additionally, if we're going to build a proper layercake here devenv.sh tries to
   - VSCode
   - st3
   - editorconfig
+- "AI Text Editor" (unstable channel, probably both for now)
+  - Zed
+    - https://github.com/skarline/zed-fleet-themes
+  - Cursor
 - Opinionated OSS release management. Consider:
   - [release-it](https://github.com/release-it/release-it)
 
@@ -71,6 +76,16 @@ Additionally, if we're going to build a proper layercake here devenv.sh tries to
 
 - Github Actions ensures that every commit is runnable from scratch
 - Github Actions ensures that every commit is a valid upgrade target for `HEAD~${X}`
+
+## Channels
+
+Inspired by [Arena channels](https://are.na) this part of LOCALBEST attempts to allow you to "test" or "promote" different new tools to perform the same operation. e.g.
+
+```
+find 
+# vs https://github.com/sharkdp/fd
+fd
+```
 
 ## **OPEN QUESTIONS**
 
@@ -80,6 +95,7 @@ Additionally, if we're going to build a proper layercake here devenv.sh tries to
   - Node.js (e.g. stick with `volta`?)
 - Which shell?
 - Which terminal(s)?
+  - Decision: `ghostty`. Why? https://steipete.me/posts/2025/claude-code-is-my-computer
   - Default macOS terminal is so obv old & busted, but tried & true at the same time
   - What about `warp`? https://www.warp.dev/
   - What about `ghostty`? https://ghostty.org/
@@ -95,6 +111,12 @@ Additionally, if we're going to build a proper layercake here devenv.sh tries to
   - KDL 2.0, maybe? https://kdl.dev/
 - Writing custom expansions?
   - Probably [omelette](https://github.com/f/omelette) because JIFASNIF
+- Do I `tmux`? 
+  - https://github.com/tmux/tmux/wiki
+  - https://www.redhat.com/en/blog/introduction-tmux-linux
+  - https://hamvocke.com/blog/a-quick-and-easy-guide-to-tmux/
+  - https://github.com/fcsonline/tmux-thumbs
+  - https://github.com/tmux-plugins/tpm
 
 ## "Let's build a road up to the moon"
 
