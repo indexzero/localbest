@@ -95,7 +95,7 @@ fd
   - Node.js (e.g. stick with `volta`?)
 - Which shell?
 - Which terminal(s)?
-  - Decision: `ghostty`. Why? https://steipete.me/posts/2025/claude-code-is-my-computer
+  - **Decision: `ghostty`. Why? https://steipete.me/posts/2025/claude-code-is-my-computer**
   - Default macOS terminal is so obv old & busted, but tried & true at the same time
   - What about `warp`? https://www.warp.dev/
   - What about `ghostty`? https://ghostty.org/
@@ -103,6 +103,7 @@ fd
 - Which prompt?
   - Current one is old & busted
   - What about https://starship.rs/? 
+  - For the git parts: https://github.com/magicmonty/bash-git-prompt
 - Do I need an App Launcher? 
   - Probably Raycast
 - Do I need `espanso`? 
