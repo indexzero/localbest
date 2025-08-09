@@ -70,7 +70,8 @@ Additionally, if we're going to build a proper layercake here devenv.sh tries to
     - https://github.com/skarline/zed-fleet-themes
   - Cursor
 - Opinionated OSS release management. Consider:
-  - [release-it](https://github.com/release-it/release-it)
+  - ~[release-it](https://github.com/release-it/release-it)~
+  - NOPE! Changesets all the way baby!
 
 ### "And taking apart"
 
@@ -87,19 +88,26 @@ find
 fd
 ```
 
+## **DECISION**
+
+- Which shell?
+  - **Decision: Keep `zsh` in Stable Channel (4) because Principle of Least Change**
+- Which terminal(s)?
+  - **Decision: Move `ghostty` to Stable Channel (4). Why? https://steipete.me/posts/2025/claude-code-is-my-computer**
+  - **Decision: Keep `Terminal.app` in Stable Channel (4) Why? Default macOS terminal is so obv old & busted, but tried & true at the same time**
+  - **Decision: Move `warp` to Experimental Channel (1) ?** https://www.warp.dev/
+  - ~What about `waveterm`? https://github.com/wavetermdev/waveterm. Ironically, I question the choice of JavaScript here 🤣~
+- Which package manager for what?:
+  - **Decision: Eject volta due to lack of transparency in globally installed tools (pre-compilation is not what I want because I read the code)**
+  - **Decision: Move `mise` to Stable Channel 94) to replace `volta` for the items it manages**
+     - https://mise.jdx.dev/
+  - **Decision: Move `nix` to Stable Channel (4) for defining custom packages, and if the nix version of a package is available install it**
+  - **Decision: Keep `homebrew` at Stable Channel (4) for items not supported by mise or nix**
+
 ## **OPEN QUESTIONS**
 
 - Which framework for:
-  - Core `zsh` (e.g. stick with `zim`?)
-- Which manager for:
-  - Node.js (e.g. stick with `volta`?)
-- Which shell?
-- Which terminal(s)?
-  - **Decision: `ghostty`. Why? https://steipete.me/posts/2025/claude-code-is-my-computer**
-  - Default macOS terminal is so obv old & busted, but tried & true at the same time
-  - What about `warp`? https://www.warp.dev/
-  - What about `ghostty`? https://ghostty.org/
-  - What about `waveterm`? https://github.com/wavetermdev/waveterm. Ironically, I question the choice of JavaScript here 🤣
+  - Core `zsh` or `fish`? (e.g. stick with `zim`?)
 - Which prompt?
   - Current one is old & busted
   - What about https://starship.rs/? 
